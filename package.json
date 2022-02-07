@@ -1,0 +1,23 @@
+{
+  "name": "a02-gillianzech",
+  "version": "1.0.0",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6903973&assignment_repo_type=AssignmentRepo)\r # a02 Functions and modules",
+  "main": "flip.js",
+  "scripts": {
+    "flip": "node flip.js",
+	  "flips": "node flips.js",
+	  "guess-flip": "node guess-flip.js",
+    "test": "node flip.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a02-GillianZech.git"
+  },
+  "author": "Gillian Zech",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a02-GillianZech/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a02-GillianZech#readme",
+  "type": "module"
+}
