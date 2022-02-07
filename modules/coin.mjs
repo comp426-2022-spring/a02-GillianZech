@@ -15,8 +15,10 @@
  */
 
 function coinFlip() {
-
+  return (Math.floor(Math.random() * 2) == 0)
+  
 }
+console.log(coinFlip()) //just for testing
 
 /** Multiple coin flips
  * 
