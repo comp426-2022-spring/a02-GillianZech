@@ -1,5 +1,5 @@
-import { coinFlip } from "./modules/coin.mjs";
 import { coinFlips } from "./modules/coin.mjs";
+
 import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 
