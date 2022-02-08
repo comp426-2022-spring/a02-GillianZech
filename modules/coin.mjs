@@ -15,11 +15,11 @@
  */
 
 function coinFlip() {
-  var flip = (Math.floor(Math.random() * 2) == 0)
-  if (flip)
-    return 'heads'
-  else return 'tails'
-  // return (Math.floor(Math.random() * 2) == 0)
+  // var flip = (Math.floor(Math.random() * 2) == 0)
+  // if (flip)
+  //   return 'heads'
+  // else return 'tails'
+  return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
   
 }
 // console.log(coinFlip()) //just for testing
@@ -50,6 +50,7 @@ function coinFlips(flips) {
     flips--
   return flip_array
 }
+// console.log(coinFlips(4))
 
 /** Count multiple flips
  * 
@@ -105,3 +106,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+export { coinFlip, coinFlips, countFlips, flipACoin };
