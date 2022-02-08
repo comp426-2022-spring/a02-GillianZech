@@ -44,13 +44,14 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-  var flip_array = []
-  while (flips > 0)
-    flip_array.push(coinFlip())
-    flips--
-  return flip_array
+  let flip_array = [];
+  while (flips > 0) {
+    flip_array.push(coinFlip());
+    flips--;
+  }
+  return flip_array;
 }
-// console.log(coinFlips(4))
+// console.log(coinFlips(4));
 
 /** Count multiple flips
  * 
@@ -66,17 +67,21 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  var flip_count = {
-    heads: 0,
-    tails: 0
+  let head = 0, tail = 0;
+  for (let item of array) {
+    if (item === "heads".valueOf()) {
+      head++;
+    }
+    else if (item === "tails".valueOf()) {
+      tail++;
+    }
   }
-  for (item in array)
-    if (item == 'heads')
-      flip_count[heads]++
-    else if (item == 'tails')
-      flip_count[tails]++
-  return flip_count
+  return {heads: head, tails: tail};
 }
+// let array = coinFlips(4);
+// console.log(array);
+// console.log(countFlips(array));
+
 
 /** Flip a coin!
  * 
@@ -90,16 +95,18 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-  var flip_result = coinFlip()
-  var win_result = False
-  if (flip_result == call)
-    win_result = True
+  let flip_result = coinFlip(), win_result = 'lose';
+  if (flip_result == call) {
+    win_result = 'win'
+  }
   return {
     call: call,
     flip: flip_result,
     result: win_result 
-  }
+  };
 }
+
+// console.log(flipACoin('tails'))
 
 
 /** Export 
