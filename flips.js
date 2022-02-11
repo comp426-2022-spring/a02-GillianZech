@@ -19,7 +19,6 @@ if (num == null) {
     } else {
         console.log("{ heads: 1 }");
     }
-    // console.log(countFlips(flip_result));
 } else {
     let flip_result = coinFlips(num);
     console.log(flip_result);

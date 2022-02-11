@@ -15,14 +15,8 @@
  */
 
 function coinFlip() {
-  // var flip = (Math.floor(Math.random() * 2) == 0)
-  // if (flip)
-  //   return 'heads'
-  // else return 'tails'
   return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
-  
 }
-// console.log(coinFlip()) //just for testing
 
 /** Multiple coin flips
  * 
@@ -77,10 +71,6 @@ function countFlips(array) {
   }
   return {heads: head, tails: tail};
 }
-// let array = coinFlips(4);
-// console.log(array);
-// console.log(countFlips(array));
-
 
 /** Flip a coin!
  * 
