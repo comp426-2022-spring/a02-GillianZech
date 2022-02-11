@@ -14,6 +14,11 @@ const num = args.number;
 if (num == null) {
     let flip_result = coinFlips(1);
     console.log(flip_result);
+    if (flip_result == [ 'tails' ]) {
+        console.log("{ tails: 1 }");
+    } else {
+        console.log("{ heads: 1 }");
+    }
     // console.log(countFlips(flip_result));
 } else {
     let flip_result = coinFlips(num);
