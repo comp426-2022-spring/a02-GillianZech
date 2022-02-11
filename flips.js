@@ -14,13 +14,9 @@ const num = args.number;
 if (num == null) {
     let flip_result = coinFlips(1);
     console.log(flip_result);
-    console.log(countFlips(flip_result));
-    // console.log("Error: Input incorrect.\nUsage: node flips.js --number=[heads|tails]")
-
+    // console.log(countFlips(flip_result));
 } else {
     let flip_result = coinFlips(num);
     console.log(flip_result);
     console.log(countFlips(flip_result));
 }
-
-// Sounds like the autograder wants us to give an error for no argument instead of flip once by default

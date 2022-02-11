@@ -51,7 +51,6 @@ function coinFlips(flips) {
   }
   return flip_array;
 }
-// console.log(coinFlips(4));
 
 /** Count multiple flips
  * 
@@ -105,9 +104,6 @@ function flipACoin(call) {
     result: win_result 
   };
 }
-
-// console.log(flipACoin('tails'))
-
 
 /** Export 
  * 
