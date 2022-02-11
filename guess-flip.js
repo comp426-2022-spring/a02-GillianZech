@@ -11,9 +11,9 @@ const args = require('minimist')(process.argv.slice(2));
 args['call'];
 const call = args.call;
 
-if (call != "heads" && call != "tails") {
+if (call == null) {
     console.log("Error: Input incorrect.\nUsage: node guess-flip.js --call=[heads|tails]")
-} else if (call == null) {
+} else if (call != "heads" && call != "tails") {
     console.log("Error: no input.")
 
 } else {
